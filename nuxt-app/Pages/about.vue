@@ -1,5 +1,9 @@
 <template>
-  <div>about pafe</div>
+  <div>
+    <NuxtLink to="/">Home</NuxtLink>
+    <NuxtLink to="about">About</NuxtLink>
+    hello about
+  </div>
 </template>
 
 <script>

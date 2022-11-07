@@ -1,9 +1,49 @@
 <template>
-  <div>hello worlddsds</div>
+  <div>
+    <NuxtLink to="/">Home</NuxtLink>
+    <NuxtLink to="about">About</NuxtLink>
+    <v-btn color="secondary" @click="moveToAbout"> Move to About </v-btn>
+    <v-card class="mx-auto" max-width="344">
+      <v-card-text>
+        <div>Word of the Day</div>
+        <p class="text-h4 text--primary">el·ee·mos·y·nar·y</p>
+        <p>adjective</p>
+        <div class="text--primary">
+          relating to or dependent on charity; charitable.<br />
+          "an eleemosynary educational institution."
+        </div>
+      </v-card-text>
+      <v-card-actions>
+        <v-btn variant="text" color="teal-accent-4" @click="reveal = true">
+          Learn More
+        </v-btn>
+      </v-card-actions>
+
+      <v-expand-transition>
+        <v-card class="transition-fast-in-fast-out v-card--reveal" style="height: 100%">
+          <v-card-text class="pb-0">
+            <p class="text-h4 text--primary">Origin</p>
+            <p>
+              late 16th century (as a noun denoting a place where alms were distributed):
+              from medieval Latin eleemosynarius, from late Latin eleemosyna ‘alms’, from
+              Greek eleēmosunē ‘compassion’
+            </p>
+          </v-card-text>
+          <v-card-actions class="pt-0">
+            <v-btn variant="text" color="teal-accent-4" @click="reveal = false">
+              Close
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-expand-transition>
+    </v-card>
+  </div>
 </template>
 
-<script>
-export default {}
+<script setup>
+function moveToAbout() {
+  navigateTo('about')
+}
 </script>
 
 <style></style>
