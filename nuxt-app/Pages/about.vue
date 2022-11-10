@@ -1,13 +1,15 @@
 <template>
   <div>
-    <NuxtLink to="/">Home</NuxtLink>
-    <NuxtLink to="about">About</NuxtLink>
+    <!-- <NuxtLink to="/">Home</NuxtLink>
+    <NuxtLink to="about">About</NuxtLink> -->
     hello about
   </div>
 </template>
 
 <script>
-export default {}
+definePageMeta({
+  layout: false,
+})
 </script>
 
 <style></style>

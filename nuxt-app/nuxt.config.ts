@@ -3,6 +3,9 @@ export default defineNuxtConfig({
     css: [
         "vuetify/lib/styles/main.sass"
     ],
+    meta: {
+        title: "Nuxt3 course"
+    },
     build: {
         transpile: ["vuetify"]
     },

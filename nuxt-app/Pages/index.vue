@@ -1,7 +1,5 @@
 <template>
   <div>
-    <NuxtLink to="/">Home</NuxtLink>
-    <NuxtLink to="about">About</NuxtLink>
     <v-btn color="secondary" @click="moveToAbout"> Move to About </v-btn>
     <v-card class="mx-auto" max-width="344">
       <v-card-text>
