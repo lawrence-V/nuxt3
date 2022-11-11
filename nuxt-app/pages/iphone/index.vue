@@ -44,8 +44,9 @@
 useHead({
   title: 'Nuxt3 -iphones',
 })
-
 const iphones = ['iphone-12', 'iphone-12-pro', 'iphone-13', 'iphone-13-pro']
+// const { data } = useFetch('/iphones')
+// const iphones = data
 </script>
 
 <style scoped>
